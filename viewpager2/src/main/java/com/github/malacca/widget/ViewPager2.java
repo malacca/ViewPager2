@@ -968,6 +968,27 @@ public final class ViewPager2 extends ViewGroup {
             super(context);
         }
 
+        protected boolean mRequestedLayout = false;
+
+        @Override
+        public void requestLayout() {
+            super.requestLayout();
+            // We need to intercept this method because if we don't our children will never update
+            // Check https://stackoverflow.com/questions/49371866/recyclerview-wont-update-child-until-i-scroll
+            if (!mRequestedLayout) {
+                mRequestedLayout = true;
+                this.post(new Runnable() {
+                    @SuppressLint("WrongCall")
+                    @Override
+                    public void run() {
+                        mRequestedLayout = false;
+                        layout(getLeft(), getTop(), getRight(), getBottom());
+                        onLayout(false, getLeft(), getTop(), getRight(), getBottom());
+                    }
+                });
+            }
+        }
+
         @RequiresApi(23)
         @Override
         public CharSequence getAccessibilityClassName() {

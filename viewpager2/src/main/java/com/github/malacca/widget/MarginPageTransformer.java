@@ -16,7 +16,6 @@
 
 package com.github.malacca.widget;
 
-import android.annotation.SuppressLint;
 import android.view.View;
 import android.view.ViewParent;
 

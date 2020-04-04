@@ -1,4 +1,4 @@
-这是一个 `androidx.viewpager2:viewpager2` 的拷贝版本，以供 react-native 可正常使用。
+这是一个 `androidx.viewpager2:viewpager2` 的拷贝版本，以供 react-native 正常使用。
 
 # 起因
 
@@ -13,7 +13,7 @@
 
 # 备注
 
-当时使用了 `androidx.viewpager2:viewpager2:1.0.0`，源码获取路径
+与 `viewpager2` 保持版本同步，当前为 `androidx.viewpager2:viewpager2:1.0.0` 的副本，源码获取路径
 
 [文档](https://developer.android.com/jetpack/androidx/releases/viewpager2#1.0.0) -> [提交记录](https://android.googlesource.com/platform/frameworks/support/+log/743e7f1c517cfe59c2e2e4149c655888670508d4..c4c5f5340c2250ff0b4709448ca82abc915ef6b4/viewpager2) -> [分支](https://android.googlesource.com/platform/frameworks/support/+/c4c5f5340c2250ff0b4709448ca82abc915ef6b4) -> [源码](https://android.googlesource.com/platform/frameworks/support/+/c4c5f5340c2250ff0b4709448ca82abc915ef6b4/viewpager2/)
 

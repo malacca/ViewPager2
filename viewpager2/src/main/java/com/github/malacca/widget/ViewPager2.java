@@ -921,6 +921,13 @@ public final class ViewPager2 extends ViewGroup {
     }
 
     /**
+     * added, not native method
+     */
+    public PageTransformer getPageTransformer() {
+        return mPageTransformerAdapter.getPageTransformer();
+    }
+
+    /**
      * Trigger a call to the registered {@link PageTransformer PageTransformer}'s {@link
      * PageTransformer#transformPage(View, float) transformPage} method. Call this when something
      * has changed which has invalidated the transformations defined by the {@code PageTransformer}

@@ -17,10 +17,15 @@
 
 [文档](https://developer.android.com/jetpack/androidx/releases/viewpager2#1.0.0) -> [提交记录](https://android.googlesource.com/platform/frameworks/support/+log/743e7f1c517cfe59c2e2e4149c655888670508d4..c4c5f5340c2250ff0b4709448ca82abc915ef6b4/viewpager2) -> [分支](https://android.googlesource.com/platform/frameworks/support/+/c4c5f5340c2250ff0b4709448ca82abc915ef6b4) -> [源码](https://android.googlesource.com/platform/frameworks/support/+/c4c5f5340c2250ff0b4709448ca82abc915ef6b4/viewpager2/)
 
+# 新增
+
+实际使用时, 又根据需要增加了 [getPageTransformer](https://github.com/malacca/ViewPager2/commit/e717fd4493bfd6f32aa4056343e69d18c1f8957a) 函数，其实该函数返回值可以通过反射获取到，但考虑到反正都改了，干脆就直接加上了，由于新增了一个方法，所以这里使用 `1.0.1` 作为版本
+
+
 # 使用
 
 ```
 dependencies {
-    implementation "com.github.malacca:ViewPager2:1.0.0"
+    implementation "com.github.malacca:ViewPager2:1.0.1"
 }
 ```
